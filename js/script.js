@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
         const title = document.getElementById('bookTitle').value;
         const author = document.getElementById('bookAuthor').value;
-        const year = document.getElementById('bookYear').value;
+        const year = parseInt(document.getElementById('bookYear').value);
         const isComplete = document.getElementById('isComplete').checked;
 
         const book = {
